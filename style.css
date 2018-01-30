@@ -992,7 +992,7 @@ a.img-wrap{
     }
 
     .progress-bar-icon{
-        top: 27px;
+        top: 57px;
         left: 29%;
     }
     .progress-bar-icon svg{
@@ -1013,6 +1013,10 @@ a.img-wrap{
 
     .grid__item{
         width: 300px;
+    }
+
+    .progress-bar-container {
+        height: 280px;
     }
 
 
