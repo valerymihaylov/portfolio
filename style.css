@@ -61,7 +61,7 @@ svg{
     position: relative;
     top:30%;
     left: 30%;
-    color: #676e67;
+    color: #848884;
 }
 
 /* Home Section */
@@ -117,7 +117,7 @@ svg{
 }
 
 .social-icons a:hover{
-    background: linear-gradient(230deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+    background: #dee0de;
     color: white;
 }
 
@@ -162,7 +162,7 @@ svg{
 .card-circle{
     position: relative;
     display: flex;
-    top:15%;
+    top: 15%;
     width: 120px;
     height: 120px;
     margin: 0 auto;
@@ -177,15 +177,20 @@ svg{
     left: 0;
 }
 
+
+.cms.card-circle svg {
+    color: #676e67;
+}
+
 .skill-text{
     text-align: center;
-    color: #676e67;
+    color: #848884;
 }
 
 p.progress-bar-percent{
     position: relative;
     right: 6px;
-    color: #676e67;
+    color: #848884;
     text-align: center;
 }
 
