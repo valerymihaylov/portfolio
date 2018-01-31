@@ -232,7 +232,7 @@ p.progress-bar-percent{
 
 .progress-bar-full-wordpress{
     height: 4px;
-    width: 89%;
+    width: 76%;
     background: #6f625b;
     animation:wordpress 2s ease-out;
 }
