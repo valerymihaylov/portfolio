@@ -23,10 +23,3 @@ $('.counter').each(function() {
 
 
 });
-
-
-$(document).ready(function(){
-    $("#hover").mouseover(function(){
-        $('#h').css("background-color", "red");
-    });
-});
