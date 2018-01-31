@@ -237,6 +237,20 @@ p.progress-bar-percent{
     animation:wordpress 2s ease-out;
 }
 
+.progress-bar-full-joomla{
+    height: 4px;
+    width: 69%;
+    background: #6f625b;
+    animation:joomla 2s ease-out;
+}
+
+.progress-bar-full-fuelcms{
+    height: 4px;
+    width: 84%;
+    background: #6f625b;
+    animation:fuelcms 2s ease-out;
+}
+
 @keyframes html5 {
     0%  { width:0px;}
     100%{ width:97%;}
@@ -260,6 +274,16 @@ p.progress-bar-percent{
 @keyframes wordpress {
     0%  { width:0px;}
     100%{ width:89%;}
+}
+
+@keyframes joomla {
+    0%  { width:0px;}
+    100%{ width:69%;}
+}
+
+@keyframes fuelcms {
+    0%  { width:0px;}
+    100%{ width:84%;}
 }
 
 /* CMS Skills Styles */
@@ -753,6 +777,14 @@ a.img-wrap{
         height: 8px;
     }
 
+    .progress-bar-full-joomla {
+        height: 8px;
+    }
+
+    .progress-bar-full-fuelcms {
+        height: 8px;
+    }
+
     .progress-bar-icon.cms svg {
         font-size: 36px;
     }
@@ -834,6 +866,14 @@ a.img-wrap{
     }
 
     .progress-bar-full-wordpress {
+        height: 10px;
+    }
+
+    .progress-bar-full-joomla {
+        height: 10px;
+    }
+
+    .progress-bar-full-fuelcms {
         height: 10px;
     }
 
