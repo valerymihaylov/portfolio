@@ -230,7 +230,7 @@ p.progress-bar-percent{
 
 .progress-bar-full-js{
     height: 6px;
-    width: 60%;
+    width: 40%;
     background: #6f625b;
     animation:js 2s ease-out;
 }
@@ -268,7 +268,7 @@ p.progress-bar-percent{
 
 @keyframes js {
     0%  { width:0px;}
-    100%{ width:60%;}
+    100%{ width:40%;}
 }
 
 @keyframes joomla {
