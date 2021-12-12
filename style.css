@@ -13,14 +13,13 @@ h1{
     font-size: 3rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-    padding: 4% 0;
+    padding: 1.5rem 0;
     color: #282828;
 }
 
 p{
     font-size: 1.2rem;
     font-family: 'Montserrat Alternates', sans-serif;
-    padding: 4% 0;
     color: #424242;
 }
 
@@ -30,11 +29,6 @@ span{
     color: #424242;
 }
 
-.job-title{
-    font-size: 1.4rem;
-    font-family: 'Montserrat Subrayada', sans-serif;
-    color: #676e67;
-}
 header{
     position: absolute;
     width: 100%;
@@ -101,6 +95,16 @@ svg{
     padding:  0 4rem;
 }
 
+.job-title{
+    font-size: 1.4rem;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    color: #178CA4;
+}
+
+.job-description {
+    padding: 1rem 0 3rem 0;
+}
+
 .social-icons a{
     display: inline-block;
     width: 50px;
@@ -112,6 +116,10 @@ svg{
     box-shadow: 0px 0px 12px #0000002e;
 }
 
+.codepen {
+    margin: 0 0.5rem;
+}
+
 .social-icons .linked:hover svg{
     color: #0966C2;
 }
@@ -120,8 +128,8 @@ svg{
     color: #000;
 }
 
-.social-icons .linked:hover svg{
-    color: #0966C2;
+.social-icons .blog:hover svg{
+    color: #1999B3;
 }
 
 /* Competence Section */
@@ -132,24 +140,26 @@ svg{
 }
 
 .skill{
-    position: relative;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     float: left;
     width: 25%;
     height: 350px;
 }
 
 .html5{
-    background: #3D5A80;
+    background: #011936;
 
 }
 
 .css3{
-    background: #98C1D9 ;
+    background: #F24333 ;
 }
 
 .js{
-    background: #EE6C4D ;
+    background: #1999B3 ;
 }
 
 .cms{
@@ -157,12 +167,9 @@ svg{
 }
 
 .card-circle{
-    position: relative;
     display: flex;
-    top: 15%;
     width: 120px;
     height: 120px;
-    margin: 0 auto;
     border: 1px solid #fff;
     border-radius: 50%;
     justify-content: center;
@@ -174,61 +181,52 @@ svg{
     left: 0;
 }
 
-
-.cms .card-circle svg {
-    color: #000;
-}
-
 .skill-text{
     text-align: center;
     color: #fff;
+    padding: 2rem 0;
+}
+
+.progress-container {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 2rem;
 }
 
 p.progress-bar-percent{
-    position: relative;
-    right: 6px;
     color: #fff;
     text-align: center;
 }
 
-.progress-bar-icon{
-    position: relative;
-    top: 38px;
-    left: 23%;
-}
-
 .progress-bar-container{
-    position: relative;
-    top: 15%;
     height: 6px;
     width: 180px;
-    margin: 0 auto;
 }
 
 .progress-bar{
     height: 6px;
     width: 100%;
-    background: #e3e3e3;
+    background: #818181;
 }
 
 .progress-bar-full-html5{
     height: 6px;
     width: 89%;
-    background: #6f625b;
+    background: #fff;
     animation:html5 2s ease-out;
 }
 
 .progress-bar-full-css3{
     height: 6px;
     width: 83%;
-    background: #6f625b;
+    background: #fff;
     animation:css3 2s ease-out;
 }
 
 .progress-bar-full-js{
     height: 6px;
     width: 50%;
-    background: #6f625b;
+    background: #fff;
     animation:js 2s ease-out;
 }
 
@@ -296,6 +294,10 @@ p.progress-bar-percent{
     width: 180px;
     height: 50px;
     margin: 0 auto;
+}
+
+.cms .card-circle svg {
+    color: #000;
 }
 
 .text-container-skills{
