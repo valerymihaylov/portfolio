@@ -19,7 +19,7 @@ h1{
 
 p{
     font-size: 1.2rem;
-    font-family: 'Montserrat Alternates', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: #424242;
 }
 
@@ -50,13 +50,6 @@ nav a{
     font-family: 'Open Sans', sans-serif;
     color: black;
     text-decoration: none;
-}
-
-svg{
-    position: relative;
-    top:30%;
-    left: 30%;
-    color: #fff;
 }
 
 /* Home Section */
@@ -120,6 +113,13 @@ svg{
     margin: 0 0.5rem;
 }
 
+.social-icons svg {
+    position: relative;
+    top: 30%;
+    left: 30%;
+    color: #1999B3;
+}
+
 .social-icons .linked:hover svg{
     color: #0966C2;
 }
@@ -129,7 +129,7 @@ svg{
 }
 
 .social-icons .blog:hover svg{
-    color: #1999B3;
+    color: #F24333;
 }
 
 /* Competence Section */
@@ -149,6 +149,11 @@ svg{
     height: 350px;
 }
 
+.skill-text {
+    color: #fff;
+    padding: 2rem 0;
+}
+
 .html5{
     background: #011936;
 
@@ -162,7 +167,7 @@ svg{
     background: #1999B3 ;
 }
 
-.cms{
+.other{
     background: #fff ;
 }
 
@@ -177,9 +182,10 @@ svg{
 }
 
 .card-circle svg{
-    top:0;
-    left: 0;
+    color: #fff;
 }
+
+.skill .cms
 
 .skill-text{
     text-align: center;
@@ -189,24 +195,28 @@ svg{
 
 .progress-container {
     display: flex;
-    flex-direction: row;
+    align-items: center;
     padding-bottom: 2rem;
+}
+
+.progress-container svg{
+    color: #fff;
 }
 
 p.progress-bar-percent{
     color: #fff;
-    text-align: center;
+    margin-right: 0.5rem;
 }
 
 .progress-bar-container{
     height: 6px;
-    width: 180px;
+    width: 230px;
 }
 
 .progress-bar{
     height: 6px;
     width: 100%;
-    background: #818181;
+    background: #b7b7b7;
 }
 
 .progress-bar-full-html5{
@@ -230,25 +240,25 @@ p.progress-bar-percent{
     animation:js 2s ease-out;
 }
 
-.progress-bar-full-wordpress{
+.progress-bar-full-angular{
     height: 4px;
-    width: 76%;
-    background: #6f625b;
-    animation:wordpress 2s ease-out;
+    width: 71%;
+    background: #1999B3;
+    animation:angular 2s ease-out;
 }
 
-.progress-bar-full-joomla{
+.progress-bar-full-animation-skills{
     height: 4px;
-    width: 69%;
-    background: #6f625b;
-    animation:joomla 2s ease-out;
+    width: 85%;
+    background: #1999B3;
+    animation:animation-skills 2s ease-out;
 }
 
-.progress-bar-full-fuelcms{
+.progress-bar-full-adobe-xd{
     height: 4px;
-    width: 84%;
-    background: #6f625b;
-    animation:fuelcms 2s ease-out;
+    width: 94%;
+    background: #1999B3;
+    animation:adobe-xd 2s ease-out;
 }
 
 @keyframes html5 {
@@ -266,72 +276,64 @@ p.progress-bar-percent{
     100%{ width:50%;}
 }
 
-@keyframes joomla {
+@keyframes angular {
     0%  { width:0px;}
-    100%{ width:78%;}
+    100%{ width:71%;}
 }
 
-@keyframes wordpress {
+@keyframes animation-skills {
     0%  { width:0px;}
-    100%{ width:76%;}
+    100%{ width:85%;}
 }
 
-@keyframes joomla {
+@keyframes adobe-xd {
     0%  { width:0px;}
-    100%{ width:69%;}
+    100%{ width:94%;}
 }
 
-@keyframes fuelcms {
-    0%  { width:0px;}
-    100%{ width:84%;}
-}
-
-/* CMS Skills Styles */
+/* Other Skills Styles */
 
 .skill-container{
     position: relative;
-    top: 20%;
-    width: 180px;
+    width: 230px;
     height: 50px;
-    margin: 0 auto;
 }
 
-.cms .card-circle svg {
-    color: #000;
+.other .card-circle svg {
+    color: #1999B3;
 }
 
 .text-container-skills{
-    display: inline-block;
+    display: flex;
+    justify-content: space-between;
 }
 
 .text-container-skills p{
-    font-size: 14px;
+    font-size: 1rem;
     padding: 0;
 }
 
 .text-container-skills.percent{
-    position: relative;
-    left: 40%;
     font-weight: bold;
+    font-size: 1.2rem;
 }
 
-.progress-bar-container.cms{
+.text-container-skills.percent svg{
+    color: #000;
+    top: 0;
+    left: 0;
+}
+
+.progress-bar-container.other{
     height: 4px;
-    top: 5%;
 }
 
-.progress-bar.cms{
+.progress-bar.other{
     height: 4px;
 }
 
-.progress-bar-icon.cms{
-    top: 3px;
-    left: 7%;
 
-}
-
-
-/*///////////////////*/
+/* Portfolio Grid */
 
 
 .grid {
@@ -411,7 +413,7 @@ p.progress-bar-percent{
     width: 100%;
     height: 100%;
     opacity: 0;
-    background: #1f1d1d;
+    background: #fff;
     -webkit-transition: opacity 0.6s;
     transition: opacity 0.6s;
 }
@@ -501,13 +503,22 @@ p.progress-bar-percent{
 }
 
 .description--preview h3 {
-    font-weight: normal;
+    font-weight: 700;
     margin: 0;
+    color: #424242;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.description--preview .category {
+    color: #1999B3;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 0.80em;
 }
 
 .description--preview p {
     font-size: 0.65em;
     max-width: 100%;
+    padding: 0.5rem 0;
 }
 
 .description--preview p em {
@@ -537,7 +548,7 @@ p.progress-bar-percent{
     position: relative;
     display: inline-block;
     margin: 0 1em 0 0;
-    padding: 0.15em 0;
+    padding: 0.5em 0;
     white-space: nowrap;
     opacity: 0;
     color: #9d9d9d;
@@ -588,7 +599,14 @@ p.progress-bar-percent{
 .details svg {
     margin-right: 5px;
     color: #77d45b;
-    left: 0;
+}
+
+.details .link:hover {
+    color: #1999B3;
+}
+
+.details .stack {
+    font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -600,15 +618,17 @@ p.progress-bar-percent{
     padding: 0;
     cursor: pointer;
     vertical-align: top;
-    color: #6bd68a;
+    color: #F24333;
     border: none;
     background: none;
 }
 
-.action:hover,
-.action:focus {
-    color: #6bd68a;
+.action:hover svg,
+.action:focus svg{
+    color: #F24333;
     outline: none;
+    -webkit-filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, 0.18));
+    filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, 0.18));
 }
 
 .action--close {
@@ -661,24 +681,27 @@ p.progress-bar-percent{
 }
 
 .text-container.portfolio h1{
-    padding-top: 4%;
-    padding-bottom: 0;
+    padding: 2rem 0;
     text-align: center;
-    font-size: 80px;
-    font-weight: 100;
-    font-family: 'Pinyon Script', cursive;
+    font-size: 4rem;
+    font-weight: 400;
+    font-family: 'Montserrat Alternates', sans-serif;
 
 }
 
 .caption{
-    background: #565656bf;
+    background: #56565696;
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 96%;
-    height: 93%;
+    height: 93.5%;
     opacity: 0;
     transition: all ease 0.5s;
     -webkit-transition: all ease 0.5s;
     -moz-transition: all ease 0.5s;
+    cursor: pointer;
 }
 
 .caption:hover{
@@ -688,14 +711,18 @@ p.progress-bar-percent{
 .caption-content{
     position: relative;
     display: flex;
-    top: 40%;
-    width: 120px;
-    height: 50px;
-    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border: 4px solid #fff;
+    border-radius: 50%;
 }
 
 .caption-content svg{
-    color: #bbbbbbbd;
+    color: #fff;
+    top: 0;
+    left: 0;
 }
 
 a.img-wrap{
@@ -769,11 +796,11 @@ a.img-wrap{
         width: 280px;
     }
 
-    .progress-bar-container-cms {
+    .progress-bar-container-other {
         height: 8px;
     }
 
-    .progress-bar.cms {
+    .progress-bar.other {
         height: 8px;
     }
 
@@ -785,15 +812,15 @@ a.img-wrap{
         height: 8px;
     }
 
-    .progress-bar-full-fuelcms {
+    .progress-bar-full-fuelother {
         height: 8px;
     }
 
-    .progress-bar-icon.cms svg {
+    .progress-bar-icon.other svg {
         font-size: 36px;
     }
 
-    .progress-bar-icon.cms {
+    .progress-bar-icon.other {
         top: 5px;
         left: 8%;
     }
@@ -847,12 +874,12 @@ a.img-wrap{
         font-size: 25px;
     }
 
-    .progress-bar-icon.cms {
+    .progress-bar-icon.other {
         left: 10%;
         top: 5px;
     }
 
-    .progress-bar-icon.cms svg{
+    .progress-bar-icon.other svg{
         font-size: 36px;
     }
 
@@ -860,12 +887,12 @@ a.img-wrap{
         width: 350px;
     }
 
-    .progress-bar-container.cms {
+    .progress-bar-container.other {
         height: 10px;
         top: 15%;
     }
 
-    .progress-bar.cms{
+    .progress-bar.other{
         height: 10px;
     }
 
@@ -877,7 +904,7 @@ a.img-wrap{
         height: 10px;
     }
 
-    .progress-bar-full-fuelcms {
+    .progress-bar-full-fuelother {
         height: 10px;
     }
 
@@ -964,11 +991,11 @@ a.img-wrap{
         font-size: 13px;
     }
 
-    .progress-bar-icon.cms{
+    .progress-bar-icon.other{
         left: 15%;
     }
 
-    .progress-bar-icon.cms svg{
+    .progress-bar-icon.other svg{
         font-size: 21px;
     }
 
@@ -1043,11 +1070,11 @@ a.img-wrap{
         font-size: 10px;
     }
 
-    .progress-bar-icon.cms{
+    .progress-bar-icon.other{
         left: 15%;
     }
 
-    .progress-bar-icon.cms svg{
+    .progress-bar-icon.other svg{
         font-size: 21px;
     }
 
@@ -1124,11 +1151,11 @@ a.img-wrap{
         font-size: 10px;
     }
 
-    .progress-bar-icon.cms{
+    .progress-bar-icon.other{
         left: 15%;
     }
 
-    .progress-bar-icon.cms svg{
+    .progress-bar-icon.other svg{
         font-size: 21px;
     }
 
