@@ -736,207 +736,127 @@ a.img-wrap{
 
 /*!* Ipad Pro *!*/
 
-/*@media only screen and (max-width: 1024px) {*/
+@media only screen and (max-width: 1024px) {
+    .home-section {
+        height: 90%;
+    }
 
-/*    .home-section {*/
-/*        height: 50%;*/
-/*    }*/
+    .home-section:before {
+        height: 90%;
+    }
 
-/*    .home-section:before {*/
-/*        height: 50%;*/
-/*    }*/
+    .left-container {
+        width: 100%;
+    }
 
-/*    .right-container {*/
-/*        width: 100%;*/
-/*    }*/
+    .left-container .text-container {
+        padding: 0 2rem;
+    }
 
-/*    .right-container .text-container {*/
-/*        top: 7%;*/
-/*    }*/
+    .left-container .text-container  span {
+        font-size: 1.5rem;
+    }
 
-/*    .right-container .text-container span{*/
-/*        font-size: 28px;*/
-/*    }*/
-/*    h1{*/
-/*        font-size: 50px;*/
-/*    }*/
+    .left-container .text-container  h1 {
+        font-size: 1.6rem;
+    }
 
-/*    strong{*/
-/*        font-size: 35px;*/
-/*    }*/
+    .job-title {
+        font-size: 1.2rem;
+    }
 
-/*    p{*/
-/*        font-size: 28px;*/
-/*    }*/
+    .job-description {
+        font-size: 1.2rem;
+        padding: 1rem 0 1rem 0;
+    }
 
-/*    .social-icons {*/
-/*        top: 7%;*/
-/*    }*/
+    .skill{
+        width: 50%;
+    }
 
-/*    .progress-bar-icon {*/
-/*        top: 39px;*/
-/*        left: 24%;*/
-/*    }*/
+    .grid__item{
+        width: 300px;
+    }
 
-/*    .skills-section {*/
-/*        height: 800px;*/
-/*    }*/
+    .text-container .first {
+        padding-top: 2rem;
+    }
 
-/*    .skill {*/
-/*        width: 50%;*/
-/*        height: 400px;*/
-/*    }*/
+    .text-container-skills p {
+        font-size: 1.2rem;
+    }
 
-/*    .skill-container {*/
-/*        width: 280px;*/
-/*        height: 60px;*/
-/*    }*/
+    .text-container-skills.percent {
+        font-size: 1.5rem;
+    }
 
-/*    .text-container-skills p {*/
-/*        font-size: 28px;*/
-/*    }*/
+    .progress-bar-container {
+        width: 230px;
+    }
+}
 
-/*    .progress-bar-container {*/
-/*        width: 280px;*/
-/*    }*/
+/* Most Tablets */
+@media only screen and (max-width: 800px) {
+    .home-section {
+        height: 80%;
+    }
 
-/*    .progress-bar-container-other {*/
-/*        height: 8px;*/
-/*    }*/
+    .home-section:before {
+        height: 80%;
+    }
 
-/*    .progress-bar.other {*/
-/*        height: 8px;*/
-/*    }*/
+    .left-container {
+        width: 100%;
+    }
 
-/*    .progress-bar-full-wordpress {*/
-/*        height: 8px;*/
-/*    }*/
+    .left-container .text-container {
+        padding: 0 2rem;
+    }
 
-/*    .progress-bar-full-joomla {*/
-/*        height: 8px;*/
-/*    }*/
+    .left-container .text-container  span {
+        font-size: 1.5rem;
+    }
 
-/*    .progress-bar-full-fuelother {*/
-/*        height: 8px;*/
-/*    }*/
+    .left-container .text-container  h1 {
+        font-size: 1.6rem;
+    }
 
-/*    .progress-bar-icon.other svg {*/
-/*        font-size: 36px;*/
-/*    }*/
+    .job-title {
+        font-size: 1.2rem;
+    }
 
-/*    .progress-bar-icon.other {*/
-/*        top: 5px;*/
-/*        left: 8%;*/
-/*    }*/
+    .job-description {
+        font-size: 1.2rem;
+        padding: 1rem 0 1rem 0;
+    }
 
-/*}*/
+    .skill{
+        width: 50%;
+    }
 
-/*!* Most Tablets *!*/
-/*@media only screen and (max-width: 800px) {*/
+    .grid__item{
+        width: 300px;
+    }
 
-/*    .home-section{*/
-/*        height: 80%;*/
-/*    }*/
+    .text-container .first {
+        padding-top: 2rem;
+    }
 
-/*    .right-container{*/
-/*        width: 100%;*/
-/*    }*/
+    .text-container-skills p {
+        font-size: 1.2rem;
+    }
 
-/*    .right-container .text-container span{*/
-/*        font-size: 30px;*/
-/*    }*/
-/*    h1{*/
-/*        font-size: 35px;*/
-/*    }*/
+    .text-container-skills.percent {
+        font-size: 1.5rem;
+    }
 
-/*    strong{*/
-/*        font-size: 32px;*/
-/*    }*/
-
-/*    p{*/
-/*        font-size: 30px;*/
-/*    }*/
-
-/*    .social-icons{*/
-/*        top:11%;*/
-/*    }*/
-
-/*    .skills-section{*/
-/*        height: 2000px;*/
-/*    }*/
-
-/*    .skill{*/
-/*        width: 100%;*/
-/*    }*/
-
-/*    .skill-container {*/
-/*        height: 80px;*/
-/*        width: 350px;*/
-/*    }*/
-
-/*    .text-container-skills p {*/
-/*        font-size: 25px;*/
-/*    }*/
-
-/*    .progress-bar-icon.other {*/
-/*        left: 10%;*/
-/*        top: 5px;*/
-/*    }*/
-
-/*    .progress-bar-icon.other svg{*/
-/*        font-size: 36px;*/
-/*    }*/
-
-/*    .progress-bar-container {*/
-/*        width: 350px;*/
-/*    }*/
-
-/*    .progress-bar-container.other {*/
-/*        height: 10px;*/
-/*        top: 15%;*/
-/*    }*/
-
-/*    .progress-bar.other{*/
-/*        height: 10px;*/
-/*    }*/
-
-/*    .progress-bar-full-wordpress {*/
-/*        height: 10px;*/
-/*    }*/
-
-/*    .progress-bar-full-joomla {*/
-/*        height: 10px;*/
-/*    }*/
-
-/*    .progress-bar-full-fuelother {*/
-/*        height: 10px;*/
-/*    }*/
-
-/*    p.progress-bar-percent{*/
-/*        padding: 5% 0;*/
-/*    }*/
-
-/*    .progress-bar-icon svg{*/
-/*        font-size: 20px;*/
-/*    }*/
-
-/*    .text-container.portfolio h1{*/
-/*        padding-top: 10%;*/
-/*    }*/
-
-/*    .grid__item{*/
-/*        width: 300px;*/
-/*    }*/
-
-/*    .skill {*/
-/*        height: 500px;*/
-/*    }*/
-
-
-/*}*/
+    .progress-bar-container {
+        width: 230px;
+    }
+}
 
 /* Iphone 6,7,8 plus */
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 428px) {
 
     .home-section {
         height: 150%;
