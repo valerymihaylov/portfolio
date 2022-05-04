@@ -221,21 +221,21 @@ p.progress-bar-percent{
 
 .progress-bar-full-html5{
     height: 6px;
-    width: 89%;
+    width: 97%;
     background: #fff;
     animation:html5 2s ease-out;
 }
 
 .progress-bar-full-css3{
     height: 6px;
-    width: 83%;
+    width: 94%;
     background: #fff;
     animation:css3 2s ease-out;
 }
 
 .progress-bar-full-js{
     height: 6px;
-    width: 50%;
+    width: 65%;
     background: #fff;
     animation:js 2s ease-out;
 }
@@ -263,17 +263,17 @@ p.progress-bar-percent{
 
 @keyframes html5 {
     0%  { width:0px;}
-    100%{ width:89%;}
+    100%{ width:97%;}
 }
 
 @keyframes css3 {
     0%  { width:0px;}
-    100%{ width:83%;}
+    100%{ width:94%;}
 }
 
 @keyframes js {
     0%  { width:0px;}
-    100%{ width:50%;}
+    100%{ width:65%;}
 }
 
 @keyframes angular {
