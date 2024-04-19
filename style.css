@@ -3148,6 +3148,12 @@ figcaption {
     width: auto;
 }
 
+@media screen and (min-width: 1920px) {
+    .slide-2 {
+        width: 100%;
+    }
+}
+
 .icon {
     color: #030303;
     -webkit-text-fill-color: inherit;
